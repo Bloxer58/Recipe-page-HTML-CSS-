@@ -17,7 +17,11 @@ body{
   overflow: auto;    
   background-color: hsl(30, 54%, 90%);
   margin: 5rem 0;
-
+  height: 100%;
+  width: 100%;
+  min-width: fit-content;
+  min-height: fit-content;
+  
 }
 body p{
     font-size: 1rem;
@@ -44,8 +48,8 @@ main{
 }
 .image img{
     margin: auto;
-    width: 40rem;
-    height: 18rem;
+    max-width: 40rem;
+    max-height: 18rem;
     border-radius: 1rem;
 
     
@@ -105,4 +109,21 @@ td{
 .cell{
     color: hsl(14, 45%, 36%);
     font-weight: 600;
+}
+#last{
+    border: 0;
+}
+@media(max-width: 375px) {
+    .image img{
+        width: 23rem;
+        height: 10rem;
+        border-radius: 0;
+        
+    }
+   main{
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+   }
+   
 }
